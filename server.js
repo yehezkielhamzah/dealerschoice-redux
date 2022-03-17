@@ -10,7 +10,6 @@ app.get('/', (req, res)=> res.sendFile(path.join(__dirname, 'index.html')));
 
 
 
-
 const init = async () => {
   try {
     await sequelize.sync({force:true})
@@ -24,3 +23,4 @@ const init = async () => {
 }
 
 init()
+
