@@ -6,6 +6,7 @@ import store from './store'
 import Chocolate from './chocolate'
 import Strawberry from './strawberry'
 import Vanilla from './vanilla'
+import Sale from './sale'
 
 class App extends React.Component {
   constructor () {
@@ -17,8 +18,10 @@ class App extends React.Component {
 
   async componentDidMount() {
     const response = await axios.get('/api/flavors')
-    const flavors = response.data
-    this.setState({ flavors })
+
+    store.dispatch({type: 'SELL_CH'})
+    // const flavors = response.data
+    // this.setState({ flavors })
   }
 
   render () {
@@ -27,9 +30,9 @@ class App extends React.Component {
       <div id="container">
         <h2>Ice Cream Flavors</h2>
           <ul>
-            <Chocolate />
-            <Strawberry />
-            <Vanilla />
+            <Chocolate  /> <Sale/>
+            <Strawberry /> <Sale/>
+            <Vanilla /> <Sale/>
           </ul>
       </div>
     )
