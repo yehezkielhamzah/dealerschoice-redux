@@ -7,6 +7,10 @@ class Strawberry extends React.Component {
     this.state = store.getState();
   }
 
+  componentDidMount() {
+    store.subscribe(() => this.setState(store.getState()))
+  }
+
   render () {
     const inventory = this.state.strawberry
     return (

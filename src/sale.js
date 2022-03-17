@@ -1,9 +1,19 @@
 import React from 'react';
+import axios from 'axios';
+import store from './store'
+import {connect} from 'react-redux'
 
-const Sale = () => {
+const Sale = ({sale}) => {
   return (
-    <button>purchase</button>
+    <button onClick={sale}>purchase</button>
   )
 }
 
-export default Sale
+const mapDispatch = (dispatch) => {
+  return {
+
+  }
+  console.log(dispatch)
+}
+
+export default connect(null, mapDispatch)(Sale)

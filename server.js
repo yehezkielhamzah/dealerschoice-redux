@@ -17,6 +17,7 @@ app.get('/api/flavors', async (req, res, next) => {
   }
 })
 
+
 const init = async () => {
   try {
     await sequelize.sync({force:true})

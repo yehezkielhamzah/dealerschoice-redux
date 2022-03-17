@@ -1,5 +1,6 @@
 import React from 'react';
 import store from './store';
+import Sale from './sale'
 
 class Chocolate extends React.Component {
   constructor () {
