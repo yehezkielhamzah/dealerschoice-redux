@@ -14,9 +14,7 @@ class Chocolate extends React.Component {
   render () {
     const inventory = this.state.chocolate
     return (
-      <ul>
         <li>Chocolate - {inventory}</li>
-      </ul>
     )
   }
 }

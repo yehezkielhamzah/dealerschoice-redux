@@ -1,9 +1,25 @@
 h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Helvetica Neue";
   color: yellow;
   text-align: center;
 }
 
 body {
   background-color: rebeccapurple;
+}
+
+h2 {
+  font-family: 'Helvetica Neue';
+  color: white;
+}
+
+button {
+  border: none;
+  background-color: white;
+  border-radius: 8px;
+}
+
+li {
+  color: white;
+  font-size: 20px;
 }

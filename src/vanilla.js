@@ -10,10 +10,8 @@ class Vanilla extends React.Component {
   render () {
     const inventory = this.state.vanilla
     return (
-      <ul>
-        <li>Vanilla - {inventory}</li>
-      </ul>
-    )
+      <li>Vanilla - {inventory}</li>
+  )
   }
 }
 

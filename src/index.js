@@ -17,23 +17,19 @@ class App extends React.Component {
   }
 
   async componentDidMount() {
-    const response = await axios.get('/api/flavors')
-
+    store.subscribe(() => this.setState(store.getState()))
     store.dispatch({type: 'SELL_CH'})
-    // const flavors = response.data
-    // this.setState({ flavors })
   }
 
   render () {
     const { flavors } = this.state
     return (
       <div id="container">
+        <button>Add</button>
         <h2>Ice Cream Flavors</h2>
-          <ul>
-            <Chocolate  /> <Sale/>
-            <Strawberry /> <Sale/>
-            <Vanilla /> <Sale/>
-          </ul>
+          <Chocolate  /> <Sale/>
+          <Strawberry /> <Sale/>
+          <Vanilla /> <Sale/>
       </div>
     )
   }

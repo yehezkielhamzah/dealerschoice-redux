@@ -41,3 +41,4 @@ const Flavor = sequelize.define ('flavor', {
 })
 
 
+

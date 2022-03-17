@@ -10,10 +10,8 @@ class Strawberry extends React.Component {
   render () {
     const inventory = this.state.strawberry
     return (
-      <ul>
-        <li>Strawberry - {inventory}</li>
-      </ul>
-    )
+      <li>Strawberry - {inventory}</li>
+  )
   }
 }
 
